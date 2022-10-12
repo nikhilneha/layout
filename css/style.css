@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  height: 300vh;
+}
+header{
+    background-color: aliceblue;
+     flex-grow: 1;
+     display: flex;
+}
+menu{
+    background-color: green;
+    flex-grow: 1;
+}
+nav{
+    background-color: aqua;
+    flex-grow: 1;
+}
+article{
+    background-color: orange;
+    flex-grow: 4;
+}
+aside{
+    background-color: rgb(154, 112, 112);
+    flex-grow: 6;
+    display: flex;
+    justify-content: space-evenly;
+}
+.left{
+    background-color: violet;
+    flex-basis: 30%;
+    margin: 30px 0px 30px 0px;
+}
+.middle{
+    background-color: teal;
+    flex-basis: 30%;
+    margin: 30px 0px 30px 0px;
+}
+.right{
+    background-color: peru ;
+    flex-basis: 30%;
+    margin: 30px 0px 30px 0px;
+}
+
+.section1{
+    background-color: yellowgreen;
+    flex-grow: 3;
+}
+.section2{
+    background-color: hotpink;
+    flex-grow: 3;
+    display: flex;
+    justify-content: space-evenly;
+}
+.left-section2{
+    background-color: wheat;
+    flex-basis: 30%;
+    margin: 30px 0px 30px 0px;
+}
+.middle-section2{
+    background-color: springgreen;
+    flex-basis: 30%;
+    margin: 30px 0px 30px 0px;
+}
+.right-section2{
+    background-color: slateblue;
+    flex-basis: 30%;
+    margin: 30px 0px 30px 0px;
+}
+.section3{
+    background-color: chocolate;
+    flex-grow: 4;
+    display: flex;
+    justify-content: space-evenly;
+}
+.left-section3{
+    background-color: aliceblue;
+    flex-basis: 30%;
+    margin: 30px 0px 30px 0px;
+}
+.middle-section3{
+    background-color: bisque;
+    flex-basis: 30%;
+    margin: 30px 0px 30px 0px;
+}
+.right-section3{
+    background-color: turquoise;
+    flex-basis: 30%;
+    margin: 30px 0px 30px 0px;
+}
+.section4{
+    background-color: tomato;
+    flex-grow: 1;
+}
