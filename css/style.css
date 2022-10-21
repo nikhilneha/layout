@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 main{
   display: flex;
@@ -10,46 +9,202 @@ main{
 }
 header{
     background-color: aliceblue;
-     flex-grow: 1;
      display: flex;
+     align-items: center;
+     position: fixed;
 }
-menu{
-    background-color: green;
-    flex-grow: 1;
+menu {
+    flex-basis: 40%;
+}
+menu h1{
+    color: rgb(222, 19, 120);
+    padding-left: 50px;
+}
+menu span{
+    color: purple;
 }
 nav{
-    background-color: aqua;
-    flex-grow: 1;
+    flex-basis: 60%;
+    margin-left: 525px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: purple;
+    font-size: 20px;
+    padding-left: 50px;
 }
 article{
-    background-color: orange;
-    flex-grow: 4;
+    display: flex; 
+    align-items: center;
+}
+.home{
+    flex-basis: 50%; 
+}
+.home h1{
+    align-self: center;
+    padding-left: 140px;
+    text-transform: uppercase;
+   font-size: 40px;
+}
+.home h1~h1{
+    color: rgb(238, 15, 127);
+    padding-top: 10px;
+}
+.home h4{
+    font-size: 20px;
+    padding: 10px 140px;
+}
+.home button{
+    margin: 10px 140px;
+    background: linear-gradient(hotpink,purple);
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+.image{
+    flex-basis: 50%;
+    animation-name: up;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+}
+@keyframes up{
+    50%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateX(-50px);
+    }
+}
+.image{
+      height: 90vh;
+     margin-top: 80px;
+      background-image: url(/images/mobile.png);
+      background-repeat: no-repeat;
+      background-position: center;
+}
+#appfeatures{
+    height: 100vh;
+}
+.top{
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: rgb(184, 8, 96);
 }
 aside{
-    background-color: rgb(154, 112, 112);
     flex-grow: 6;
     display: flex;
     justify-content: space-evenly;
 }
 .left{
-    background-color: violet;
     flex-basis: 30%;
     margin: 30px 0px 30px 0px;
+    border: 1px solid;
+    box-shadow: 2px 3px 5px gray;
+}
+.left img{
+    height: 300px;
+    width: 300px;
+    margin: 20px 50px;
+}
+.left h3{
+    text-align: center;
+    font-size: 25px;
+}
+.left p{
+    margin: 10px 60px;
+}
+.left button{
+    margin: 10px 140px;
+    background: linear-gradient(hotpink,purple);
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
 }
 .middle{
-    background-color: teal;
     flex-basis: 30%;
     margin: 30px 0px 30px 0px;
+    border: 1px solid;
+    box-shadow: 2px 3px 5px gray;
+}
+.middle img{
+    height: 300px;
+    width: 300px;
+    margin: 20px 50px;
+}
+.middle  h3{
+    text-align: center;
+    font-size: 25px;
+}
+.middle p{
+    margin: 10px 60px;
+}
+.middle button{
+    margin: 10px 140px;
+    background: linear-gradient(hotpink,purple);
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
 }
 .right{
-    background-color: peru ;
     flex-basis: 30%;
     margin: 30px 0px 30px 0px;
+    border: 1px solid;
+    box-shadow: 2px 3px 5px gray;
+}
+.right img{
+    height: 300px;
+    width: 300px;
+    margin: 20px 50px;
+}
+.right  h3{
+    text-align: center;
+    font-size: 25px;
+}
+.right p{
+    margin: 10px 60px;
+}
+.right button{
+    margin: 10px 140px;
+    background: linear-gradient(hotpink,purple);
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
 }
 
 .section1{
     background-color: yellowgreen;
     flex-grow: 3;
+    display: flex;
+}
+.newtop h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 40px;
+    color: rgb(144, 10, 77);
+}
+.section1-left{
+    background-color: red;
+    flex-grow: 1;
+}
+.section1-right{
+    background-color: yellow;
+    flex-grow: 1;
 }
 .section2{
     background-color: hotpink;
